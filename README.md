@@ -401,6 +401,7 @@ Jun: Data Collection & Predominantly Data Cleaning/Wrangling
 Torres: Data Cleaning/Wrangling & Predominantly Data Visualisation and Interpretation
 Equal split for Documentation
 
-## Appendix: ink to repo: https://github.com/ethanvirtudazo/DS105_Project
+## Appendix: 
+Link to repo: https://github.com/ethanvirtudazo/DS105_Project
 
 

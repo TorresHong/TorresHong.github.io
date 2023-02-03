@@ -1,6 +1,6 @@
 **DS105 Final Project - Website Content**
 
-![Alt text](./skills_graph.png)
+![Alt text](./skills_graph.png){:height="500px" width="500px"}
 
 **Executive Summary:**
 

@@ -1,4 +1,6 @@
-**DS105 Final Project - Website Content**
+# LSE CAREER HUBBER
+
+### DS105M Project
 
 ![Alt text](./skills_graph.png){:height="500px" width="500px"}
 

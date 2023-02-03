@@ -1,4 +1,4 @@
-# LSE CAREER HUBBER
+# LSE CAREER HUBBERS
 
 ### DS105M Project
 #### Source Code 

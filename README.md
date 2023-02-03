@@ -394,14 +394,15 @@ To conclude, we have the following findings:
 - The framework and approach used in this project can be applied to other industries to explore their hiring landscapes. This has the potential to provide valuable insights into the recruitment practices of a wide range of industries and inform job seekers in their career choices.
 
 ## Collaboration:
-Ethan: Predominantly Data Collection & Data Cleaning/Wrangling 
+Ethan Virtudazo: Predominantly Data Collection & Data Cleaning/Wrangling 
 
-Jun: Data Collection & Predominantly Data Cleaning/Wrangling 
+Chun Hei (Jun) Hui: Data Collection & Predominantly Data Cleaning/Wrangling 
 
-Torres: Data Cleaning/Wrangling & Predominantly Data Visualisation and Interpretation
+Cheuk Wun (Torres) Hong: Data Cleaning/Wrangling & Predominantly Data Visualisation and Interpretation
 Equal split for Documentation
 
 ## Appendix: 
-Link to repo: https://github.com/ethanvirtudazo/DS105_Project
+Link to backend repo: https://github.com/ethanvirtudazo/DS105_Project
+Link to website repo: https://github.com/TorresHong/TorresHong.github.io
 
 

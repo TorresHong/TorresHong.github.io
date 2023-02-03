@@ -1,6 +1,9 @@
 # LSE CAREER HUBBER
 
 ### DS105M Project
+#### Source Code 
+Link to backend repo: https://github.com/ethanvirtudazo/DS105_Project
+Link to website repo: https://github.com/TorresHong/TorresHong.github.io
 
 ## Executive Summary:
 

@@ -47,7 +47,7 @@ Therefore, the key questions we aim to answer in order to achieve our primary ob
 2. Has firms' hiring appetite changed over the years and if so, what factors might have driven these changes?
 3. What is the timeline and pattern of recruitment seasons, and has it changed throughout the years?
 4. What are firms’ hiring tendencies in terms of opportunity/contract types?
-5. What are the top firms that post on LSE CareerHub?
+5. What are the top firms that post on LSE Career Hub?
 6. How can we use answers to the aforementioned questions to uplift the competitiveness of LSE students in the investment banking industry? 
 
 ### - Secondary Objective
@@ -79,7 +79,7 @@ The information available is quite comprehensive but our data collection the fol
 
 ### 2. Data Collection
 
-were requests, selenium, BeautifulSoup, and Pandas.
+The main Python libraries used to collect and organize the data from the website were requests, selenium, BeautifulSoup, and Pandas.
 
 The first obstacle to collecting the data was entering the university’s internal website. As the portal grants exclusive access to LSE students, valid login details need to be used to access the data. By inputting our member’s credentials using the selenium library, we were able to enter the website. 
 
@@ -88,6 +88,7 @@ Selenium allows for the navigation of websites through its .click() function whi
 Using the first for loop, with BeautifulSoup we scan the entire list and extract the link, job title, and application deadline for each job. The remaining information was extracted by going into each job’s webpage (with a second loop) and identifying the relevant HTML block; these included commencement date, job details (which include skills required, responsibilities of the job, etc.), contract type, and opportunity type.  
 
 An obstacle in this part of the data collection was the varied structures of the webpage. Depending on how old the job posting was, certain pieces of information were located in different parts of the HTML blocks. The second loop would stop when the block it was looking for did not exist or was located in another branch of HTML.
+
 Through a combination of trial-and-error and manually looking at the HTML code of web pages that raised errors, the loop was able to adjust its search across varied structures of web pages using different error exceptions. 
 
 Every piece of information was appended to its corresponding list (e.g. each job title was contained in a list called job_titles). The lists were converted to Pandas and finally exported as a .csv file. 
@@ -148,8 +149,6 @@ The dictionary contains multiple layers:
 
 <img src="./dict_filter_bool.png" style="height:100%;width:100%">
 
-The inner function looks like this: 
-
 The filter has several parameters:
 
 - the token score type
@@ -157,6 +156,8 @@ The filter has several parameters:
 - the list of skills included in the dictionary for each respective skill
 
 These parameters can be fine-tuned further, but with preliminary trial-and-error testing, we decided on the specific words to include, score type and score threshold.
+
+The inner function looks like this: 
 
 <img src="./inner_component.png" style="height:100%;width:100%">
 
@@ -174,7 +175,7 @@ To analyze the application deadline data, we will first extract the relevant col
 
 In order to maintain the integrity of the original dataset, we will create a copy of the data using the df_deadlines.copy() function.
 
-#### Graphs Part 1: Deadline Frequency of each year by date
+#### Graphs Part 1: Deadline Frequency of each year by month
 
 To visualize the frequency of deadlines over time, we will use the groupby method and the .dt.floor('d') function to count the number of occurrences of each date and standardize the format of the DateTime data.
 
@@ -387,7 +388,7 @@ To conclude, we have the following findings:
 #### 1. Location analysis: 
 - Due to our limited knowledge of geopandas and geopy, we didn’t manage to create a Choropleth Map that reflects the frequency of job postings in different countries. We have attached the visualisation we came up with below. A successful map would provide valuable insights into the distribution of job postings across different countries, which LSE could use to reach out to firms in countries with a low number of job postings to expand the demographics of opportunities available to LSE students.
 
-<img src="./data_viz_map.png" style="height:80%;width:80%">
+<img src="./data_viz_map.png" style="height:65%;width:65%">
 
 #### 2. Desired Soft Skills Analysis: 
 - The current project has focused on analyzing hard skills such as Microsoft Office and programming skills. However, there is room for expansion to include soft skills such as leadership and communication skills. This requires the identification of phrases related to these skills rather than single words or strings, which may be accomplished by utilizing relevant NLP packages or techniques.

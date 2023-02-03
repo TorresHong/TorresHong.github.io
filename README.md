@@ -32,7 +32,7 @@ In addition, we seek to offer suggestions on how LSE CareerHub can improve to en
 
 The purpose of this project is twofold: first, the primary objective is to analyze the investment banking hiring landscape, subsequently informing LSE students on how to become more competitive candidates, whereas the secondary objective is to proffer insights into ways in which LSE CareerHub can be optimized to aid students in their job search. 
 
-# - Primary Objective
+### - Primary Objective
 
 To achieve the primary objective, we hope to offer insights on several areas related to the hiring demand/preferences of employers and the macro landscape of the investment banking job market: 1. Desired Skill Sets, 2. Firms’ Hiring Appetite & Recruitment Season Patterns, 3. Opportunity/Contract Type, and 4. Top Firms that Post on LSE Career Hub.
 
@@ -45,7 +45,7 @@ Therefore, the key questions we aim to answer in order to achieve our primary ob
 5. What are the top firms that post on LSE CareerHub?
 6. How can we use answers to the aforementioned questions to uplift the competitiveness of LSE students in the investment banking industry? 
 
-# - Secondary Objective
+### - Secondary Objective
 
 The secondary objective stems from identifying the obstacles we had during the data collection and cleaning process, which constitutes a key question:
 
@@ -53,7 +53,7 @@ The secondary objective stems from identifying the obstacles we had during the d
 
 
 
-## Data Visualisation and Interpretation:
+### Data Visualisation and Interpretation:
 
 After we completed collecting, cleaning and wrangling the data, we visualised and interpreted the data to answer the key questions we set out above. 
 

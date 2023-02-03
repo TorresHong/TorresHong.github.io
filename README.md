@@ -135,7 +135,7 @@ We need to create a few objects before running the filter against the dataset.
 
 - for example, when looking for Microsoft Office Skills, we may search for the following keywords in the text: ["Microsoft","MS","MS-Office","Powerpoint","Excel"]
 
-2.  We create an empty dataframe using Pandas called df_bool which will store the occurrence of every skill for every respective job.  
+2. We create an empty dataframe using Pandas called df_bool which will store the occurrence of every skill for every respective job.  
 
 Next, we create a function called dict_filter_bool which appends entries of 0 or 1 to the df_bool.
 
@@ -155,7 +155,7 @@ The filter has several parameters:
 - the token score threshold
 - the list of skills included in the dictionary for each respective skill
 
-These parameters can be fine-tuned further, but with preliminary trial-and-error testing, we decided on the specific words to include, score type and score threshold. The dictionary fitler is not 100% accurate and some words that are not intended as skills are also picked up by our function. For example, Facets was mistaken for FactSet. A future point of improvement would be to develop a systematic way to measure the accuracy of the words detected. Alternatively, more sophisticated methods of natural language processing and/or machine learning could be used to train a model to read the texts and accurately identify the parts of the text that indicate a list of skills required and appropriately extract the individual skills.
+These parameters can be fine-tuned further, but with preliminary trial-and-error testing, we decided on the specific words to include, score type and score threshold. The dictionary fitler is not 100% accurate and some words that are not intended as skills are also picked up by our function. For example, 'Facets' was mistaken for 'FactSet'. A future point of improvement would be to develop a systematic way to measure the accuracy of the words detected. Alternatively, more sophisticated methods of natural language processing and/or machine learning could be used to train a model to read the texts and accurately identify the parts of the text that indicate a list of skills required and appropriately extract the individual skills.
 
 The inner function looks like this: 
 
